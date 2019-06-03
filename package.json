@@ -1,0 +1,35 @@
+{
+  "name": "rgtac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.18",
+    "@fortawesome/free-brands-svg-icons": "^5.8.2",
+    "@fortawesome/free-solid-svg-icons": "^5.8.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@zeit/next-sass": "^1.0.1",
+    "animate.css": "^3.7.0",
+    "bootstrap": "^4.3.1",
+    "emergence.js": "^1.1.2",
+    "jquery": "^3.4.1",
+    "modern-normalize": "^0.5.0",
+    "next": "^8.1.0",
+    "node-sass": "^4.12.0",
+    "popper.js": "^1.15.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-medium-image-zoom": "^3.0.16",
+    "react-router-dom": "^5.0.0",
+    "reactstrap": "^8.0.0",
+    "wowjs": "^1.1.3"
+  }
+}
