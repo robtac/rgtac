@@ -102,8 +102,8 @@ export default class Home extends React.Component {
 							<div className="col-lg-7 col-md-6">
 								<h2>About Me</h2>
 								<p align="justify">
-									Hi, my name is Robbie Tacescu, and I am a freshman at the
-									University of Massachusetts Amherst. From a young age, I’ve
+									Hi, my name is Robbie Tacescu, and I am a sophomore at the
+									University of Massachusetts Amherst studying computer science. From a young age, I’ve
 									been fascinated by the magic of computers and the wonders we
 									are able to achieve with them. I strive to expand my knowledge
 									and contribute to the community through research in the fields

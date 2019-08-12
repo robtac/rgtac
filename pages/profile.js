@@ -73,9 +73,7 @@ export default class Profile extends React.Component {
 							</div>
 						</div>
 						<div className="row justify-content-center">
-							<div
-								className="col-lg-3 col-md-5 align-items-center"
-							>
+							<div className="col-lg-3 col-md-5 align-items-center">
 								<p className="text-primary">
 									<strong>This website was built in React!</strong>
 								</p>
