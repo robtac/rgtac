@@ -28,6 +28,10 @@ export default class Safecopter extends React.Component {
 							<a href="https://github.com/robtac/Safecopter">
 								View the source code
 							</a>
+							{" | "}
+							<Link href="/awards">
+								View Safecopter's awards
+							</Link>
 						</div>
 					</div>
 					<br />
@@ -94,7 +98,7 @@ export default class Safecopter extends React.Component {
 									more details, see the <Link to="/awards">awards page</Link>.
 								</p>
 								<br />
-								<p align="left">Many thanks to...</p>
+								<p align="left">Many thanks to these companies for supporting this project...</p>
 							</div>
 							<div className="row col-md-12 offset-md-1">
 								<div className="col-md-3">

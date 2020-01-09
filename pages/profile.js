@@ -75,7 +75,7 @@ export default class Profile extends React.Component {
 						<div className="row justify-content-center">
 							<div className="col-lg-3 col-md-5 align-items-center">
 								<p className="text-primary">
-									<strong>This website was built in React!</strong>
+									<strong>I built this website in React!</strong>
 								</p>
 							</div>
 						</div>
@@ -149,9 +149,15 @@ export default class Profile extends React.Component {
 									<br />
 								</p>
 								<li>
+									2019 ~ : {" "}
+									<Link href="/ai">
+										<a className="link-light">AI Bear Recognition</a>
+									</Link>
+								</li>
+								<li>
 									2015 ~ 2018:{" "}
 									<Link href="/safecopter">
-										<a className="link-light">Safecopter</a>
+										<a className="link-light">Safecopter Project</a>
 									</Link>
 								</li>
 								<li>

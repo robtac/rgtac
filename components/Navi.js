@@ -55,7 +55,7 @@ export default class Navi extends React.Component {
 								</NavItem>
 								<NavItem>
 									<Link href="/ai">
-										<NavLink className="click">AI</NavLink>
+										<NavLink className="click">AI Projects</NavLink>
 									</Link>
 								</NavItem>
 								<UncontrolledDropdown nav inNavbar>
