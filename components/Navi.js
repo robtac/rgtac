@@ -69,6 +69,12 @@ export default class Navi extends React.Component {
 											</DropdownItem>
 										</Link>
 										<DropdownItem divider />
+										<Link href="/hackumass2019">
+											<DropdownItem className="text-white blue-hover">
+												HackUMass 2019
+											</DropdownItem>
+										</Link>
+										<DropdownItem divider />
 										<Link href="/frc">
 											<DropdownItem className="text-white blue-hover">
 												FRC Robotics
