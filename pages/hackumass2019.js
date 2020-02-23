@@ -8,6 +8,7 @@ export default class frc extends React.Component {
 				<section className="text-center">
 					<div className="container">
 						<h1>Project Odin</h1>
+						<p><i>Winner of Best AR/VR Hack, and 3rd place overall at HackUMass 2019</i></p>
 					</div>
 					<br />
 					<div className="container">

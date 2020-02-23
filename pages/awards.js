@@ -5,6 +5,13 @@ import Image from "../components/Image";
 
 let awards = [
   {
+    img: "/static/hackumass.jpg",
+    alt: "Project Odin",
+    text: "2019: Winner of Best AR/VR Hack, and 3rd place overall at HackUMass 2019",
+    link: "Project Odin",
+    linkTarget: "/hackumass2019"
+  },
+  {
     img: "/static/award10.jpg",
     alt: "NASA Award",
     text: "2018: First place award from NASA at Intel International Science and Engineering Fair (ISEF) in Pittsburgh, Pennsylvania",
