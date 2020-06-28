@@ -34,7 +34,7 @@ export default class frc extends React.Component {
 								</p>
 							</div>
 							<div className="col-md-4 col-xs-8 offset-xs-2 d-flex align-items-center">
-								<img src="/static/frc.png" alt="FRC logo" />
+								<img src="./frc.png" alt="FRC logo" />
 							</div>
 						</div>
 						<br />
@@ -53,7 +53,7 @@ export default class frc extends React.Component {
 									shooter to the target.
 								</p>
 								<img
-									src="/static/frc-medal.jpg"
+									src="./frc-medal.jpg"
 									alt="FRC Medal"
 									className="frc-medal"
 								/>

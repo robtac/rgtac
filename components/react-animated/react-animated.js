@@ -9,7 +9,7 @@ export default class ReactAnimated extends React.Component {
         Edit <code>src/App.js</code> and save to reload.
       </p> */}
 				<img
-					src="/static/react.svg"
+					src="./react.svg"
 					className="App-logo"
 					alt="logo"
 				/>

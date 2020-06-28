@@ -16,21 +16,21 @@ export default class Safecopter extends React.Component {
 									width="640"
 									height="360"
 									src="https://www.youtube.com/embed/dchzdfMpMYg"
-									frameborder="0"
+									frameBorder="0"
 									className="embed-responsive-item"
-									allowfullscreen="0"
+									allowFullScreen="0"
 								/>
 							</div>
 						</div>
 						<h1>Safecopter</h1>
 						<p className="lead text-muted">The Quadcopter that Never Crashes</p>
 						<div>
-							<a href="https://github.com/robtac/Safecopter">
+							<a href="https://github.com/robtac/Safecopter" target="_blank">
 								View the source code
 							</a>
 							{" | "}
 							<Link href="/awards">
-								View Safecopter's awards
+								<a>View Safecopter's awards</a>
 							</Link>
 						</div>
 					</div>
@@ -38,7 +38,7 @@ export default class Safecopter extends React.Component {
 					<div className="container">
 						<div className="row justify-content-md-start">
 							<div className="col-md-6">
-								<Image src="/static/quad1.jpg" alt="Safecopter In Person" />
+								<Image src="./quad1.jpg" alt="Safecopter In Person" />
 								<br />
 								<p align="justify">
 									Integrating an array of time-of-flight 3D cameras, the
@@ -48,7 +48,7 @@ export default class Safecopter extends React.Component {
 									The challenge is to develop an algorithm fast enough to
 									provide collision avoidance decisions in real time.
 								</p>
-								<Image src="/static/quad-graph.png" alt="Safecopter data graph" />
+								<Image src="./quad-graph.png" alt="Safecopter data graph" />
 							</div>
 							<div className="col-md-6">
 								<p align="justify">
@@ -60,7 +60,7 @@ export default class Safecopter extends React.Component {
 									make flying a multicopter in autonomous or tele-operated mode
 									completely safe and responsive to the changing environment.
 								</p>
-								<Image src="/static/quad2.png" alt="Safecopter Exploded View" />
+								<Image src="./quad2.png" alt="Safecopter Exploded View" />
 								<br />
 								<p align="justify">
 									Based on the research of multiple collision detection
@@ -86,7 +86,7 @@ export default class Safecopter extends React.Component {
 							</div>
 							<div className="col-md-10 offset-md-1">
 								<Image
-									src="/static/quad-screenshot.png"
+									src="./quad-screenshot.png"
 									alt="Screenshot of Safecopter Simulation"
 								/>
 							</div>
@@ -95,7 +95,7 @@ export default class Safecopter extends React.Component {
 								<p align="justify">
 									This project has won numerous international awards at the
 									Intel International Science and Engineering Fair (ISEF). For
-									more details, see the <Link to="/awards">awards page</Link>.
+									more details, see the <Link href="/awards"><a>awards page</a></Link>.
 								</p>
 								<br />
 								<p align="left">Many thanks to these companies for supporting this project...</p>
@@ -103,15 +103,15 @@ export default class Safecopter extends React.Component {
 							<div className="row col-md-12 offset-md-1">
 								<div className="col-md-3">
 									<p align="center">IFM!</p>
-									<img src="/static/icon-ifm.png" alt="IFM" />
+									<img src="./icon-ifm.png" alt="IFM" />
 								</div>
 								<div className="col-md-3 offset-md-1">
 									<p align="center">PMD Technologies!</p>
-									<img src="/static/icon-pmd.jpg" alt="PMD" />
+									<img src="./icon-pmd.jpg" alt="PMD" />
 								</div>
 								<div className="col-md-4 offset-md-1">
 									<p align="center">Nvidia!</p>
-									<img src="/static/icon-nvidia.jpg" alt="Nvidia" />
+									<img src="./icon-nvidia.jpg" alt="Nvidia" />
 								</div>
 							</div>
 						</div>

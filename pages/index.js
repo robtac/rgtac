@@ -3,20 +3,21 @@ import Link from "next/link";
 import Layout from "../components/Layout/layout";
 import { Carousel, CarouselItem } from "reactstrap";
 import Image from "../components/Image";
+import ImageZoom from "react-medium-image-zoom";
 
 const items = [
 	{
-		src: "/static/home-banner1.jpg",
+		src: "./home-banner1.jpg",
 		altText: "Banner 1",
 		caption: ""
 	},
 	{
-		src: "/static/home-banner2.jpg",
+		src: "./home-banner2.jpg",
 		altText: "Banner 2",
 		caption: ""
 	},
 	{
-		src: "/static/home-banner3.jpg",
+		src: "./home-banner3.jpg",
 		altText: "Banner 3",
 		caption: ""
 	}
@@ -82,7 +83,7 @@ export default class Home extends React.Component {
 			<Layout>
 				<section className="text-center">
 					<div className="container">
-						{/* <img src="/static/home-banner1.jpg" alt="Home Banner" /> */}
+						{/* <img src="/public/home-banner1.jpg" alt="Home Banner" /> */}
 						<Carousel
 							activeIndex={activeIndex}
 							next={this.next}
@@ -97,7 +98,7 @@ export default class Home extends React.Component {
 						<br />
 						<div className="row">
 							<div className="col-lg-5 col-md-6 d-flex align-items-center">
-								<Image src="/static/home1.jpg" alt="Project Portrait" />
+								<Image src="./home1.jpg" alt="Project Portrait" />
 							</div>
 							<div className="col-lg-7 col-md-6">
 								<h2>About Me</h2>
@@ -113,7 +114,7 @@ export default class Home extends React.Component {
 									</Link>
 								</p>
 								<div className="col-md-10 offset-md-1">
-									<Image src="/static/home-nasa.jpg" alt="Nasa" />
+									<Image src="./home-nasa.jpg" alt="Nasa" />
 								</div>
 							</div>
 						</div>
@@ -134,8 +135,8 @@ export default class Home extends React.Component {
 								</p>
 							</div>
 							<div className="col-lg-5 col-md-6 d-flex align-items-center">
-								{/* <img src="/static/home-quad.png" alt="Safecopter" /> */}
-								<Image src="/static/home-quad.png" alt="Safecopter" />
+								{/* <img src="/public/home-quad.png" alt="Safecopter" /> */}
+								<Image src="./home-quad.png" alt="Safecopter" />
 							</div>
 						</div>
 					</div>

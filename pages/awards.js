@@ -5,84 +5,84 @@ import Image from "../components/Image";
 
 let awards = [
   {
-    img: "/static/hackumass.jpg",
+    img: "./hackumass.jpg",
     alt: "Project Odin",
     text: "2019: Winner of Best AR/VR Hack, and 3rd place overall at HackUMass 2019",
     link: "Project Odin",
     linkTarget: "/hackumass2019"
   },
   {
-    img: "/static/award10.jpg",
+    img: "./award10.jpg",
     alt: "NASA Award",
     text: "2018: First place award from NASA at Intel International Science and Engineering Fair (ISEF) in Pittsburgh, Pennsylvania",
     link: "Safecopter",
     linkTarget: "/safecopter"
   },
   {
-    img: "/static/award9.jpg",
+    img: "./award9.jpg",
     alt: "AIAA Award Group",
     text: "2018: Second place award from American Institute of Aeronautics and Astronautics (AIAA) at Intel International Science and Engineering Fair (ISEF) in Pittsburgh, Pennsylvania",
     link: "Safecopter",
     linkTarget: "/safecopter"
   },
   {
-    img: "/static/award8.jpg",
+    img: "./award8.jpg",
     alt: "2018 Project Board",
     text: "2018: Sweepstakes Award / First Place (all categories) at the 2018 Central California Science Mathematics & Engineering Fair. First Place in the category of Computer Science and Mathematics",
     link: "Safecopter",
     linkTarget: "/safecopter"
   },
   {
-    img: "/static/award7.jpg",
+    img: "./award7.jpg",
     alt: "2018 Regional Science Fair Awards",
     text: "2018: Excellence in Science at the 2018 Central California Science Mathematics & Engineering Fair",
     link: "Safecopter",
     linkTarget: "/safecopter"
   },
   {
-    img: "/static/award6.jpg",
+    img: "./award6.jpg",
     alt: "ISEF Awards",
     text: "2017: Third Place in the category of Robotics and Intelligent Machines at Intel International Science and Engineering Fair (ISEF) in Los Angeles, California",
     link: "Safecopter",
     linkTarget: "/safecopter"
   },
   {
-    img: "/static/award5.jpg",
+    img: "./award5.jpg",
     alt: "Air Force award",
     text: "2017: First place award from United States Air Force at ISEF",
     link: "Safecopter",
     linkTarget: "/safecopter"
   },
   {
-    img: "/static/award4.jpg",
+    img: "./award4.jpg",
     alt: "NASA Award Group",
     text: "2017: Second place award from NASA at ISEF",
     link: "Safecopter",
     linkTarget: "/safecopter"
   },
   {
-    img: "/static/award3.jpg",
+    img: "./award3.jpg",
     alt: "FRC Group",
     text: "2017: Team 2761 FIRST FRC Robotics Los Angeles Winner and Participation in FIRST FRC World Championship",
     link: "FRC",
     linkTarget: "/frc"
   },
   {
-    img: "/static/award2.jpg",
+    img: "./award2.jpg",
     alt: "Safecopter Project Board 2",
     text: "2017: Sweepstakes Award / First Place (all categories) at the 2017 Central California Science Mathematics & Engineering Fair. First Place in the category of Computer Science and Mathematics",
     link: "Safecopter",
     linkTarget: "/safecopter"
   },
   {
-    img: "/static/award1.jpg",
+    img: "./award1.jpg",
     alt: "Award Selfie",
     text: "2016: Third Place in the category of Robotics and Intelligent Machines at Intel International Science and Engineering Fair in Phoenix, Arizona",
     link: "Safecopter",
     linkTarget: "/safecopter"
   },
 	{
-		img: "/static/award0.jpg",
+		img: "./award0.jpg",
 		alt: "Safecopter Project Board",
 		text: "2016: First Place in the category of Computer Science and Mathematics, Second Place (all categories) at the 2016 Central California Science Mathematics & Engineering Fair ",
 		link: "Safecopter",

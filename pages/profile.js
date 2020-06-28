@@ -24,7 +24,7 @@ export default class Profile extends React.Component {
 				<section className="text-center">
 					<div className="container">
 						<img
-							src="/static/profile-cropped.png"
+							src="./profile-cropped.png"
 							alt="Profile"
 							className="rounded-circle profile"
 						/>
@@ -34,7 +34,7 @@ export default class Profile extends React.Component {
 								<a href="https://github.com/robtac" target="_blank">
 									<div className="d-flex flex-column">
 										<img
-											src="/static/icons/github.svg"
+											src="./icons/github.svg"
 											className="profile-icon"
 										/>
 										<p>Github</p>
@@ -48,7 +48,7 @@ export default class Profile extends React.Component {
 								>
 									<div className="d-flex flex-column">
 										<img
-											src="/static/icons/linkedin.svg"
+											src="./icons/linkedin.svg"
 											className="profile-icon"
 										/>
 										<p>LinkedIn</p>
@@ -56,10 +56,10 @@ export default class Profile extends React.Component {
 								</a>
 							</div>
 							<div className="">
-								<a href="/static/resume.pdf" target="_blank">
+								<a href="./resume.pdf" target="_blank">
 									<div className="d-flex flex-column">
 										<img
-											src="/static/icons/file-pdf.svg"
+											src="./icons/file-pdf.svg"
 											className="profile-icon"
 										/>
 										<p>Resume</p>
@@ -134,7 +134,7 @@ export default class Profile extends React.Component {
 				<section id="features" className="text-center jumboimage">
 					<div className="cover-image">
 						<img
-							src="/static/back1.jpg"
+							src="./back1.jpg"
 							alt="Phone Background"
 							className="cover-image"
 						/>
@@ -188,7 +188,7 @@ export default class Profile extends React.Component {
 						<div className="row">
 							<div className="col-md-6 slide-left" data-emergence="hidden">
 								<Link href="/safecopter">
-									<img src="/static/quad3.png" alt="Safecopter Exploded View" />
+									<img src="./quad3.png" alt="Safecopter Exploded View" />
 								</Link>
 								<Link href="/safecopter">
 									<p>Safecopter</p>
@@ -196,7 +196,7 @@ export default class Profile extends React.Component {
 							</div>
 							<div className="col-md-6 slide-right" data-emergence="hidden">
 								<Link href="/frc">
-									<img src="/static/frc.png" alt="FRC Logo" />
+									<img src="./frc.png" alt="FRC Logo" />
 								</Link>
 								<Link href="/frc">
 									<p>FRC Robotics</p>

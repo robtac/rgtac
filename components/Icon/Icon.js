@@ -2,21 +2,21 @@ import React from "react";
 import "./style.scss";
 
 const iconList = {
-	android: "/static/icons/android.svg",
-	apple: "/static/icons/apple.svg",
-	aws: "/static/icons/aws.svg",
-	cpp: "/static/icons/cpp.png",
-	pdf: "/static/icons/file-pdf.svg",
-	github: "/static/icons/github.svg",
-	html5: "/static/icons/html5.svg",
-	java: "/static/icons/java.svg",
-	js: "/static/icons/js.svg",
-	linkedin: "/static/icons/linkedin.svg",
-	linux: "/static/icons/linux.svg",
-	node: "/static/icons/node.svg",
-	python: "/static/icons/python.svg",
-	react: "/static/icons/react.svg",
-	ros: "/static/icons/ros.png"
+	android: "./icons/android.svg",
+	apple: "./icons/apple.svg",
+	aws: "./icons/aws.svg",
+	cpp: "./icons/cpp.png",
+	pdf: "./icons/file-pdf.svg",
+	github: "./icons/github.svg",
+	html5: "./icons/html5.svg",
+	java: "./icons/java.svg",
+	js: "./icons/js.svg",
+	linkedin: "./icons/linkedin.svg",
+	linux: "./icons/linux.svg",
+	node: "./icons/node.svg",
+	python: "./icons/python.svg",
+	react: "./icons/react.svg",
+	ros: "./icons/ros.png"
 }
 
 const Icon = ({ name, title }) => (

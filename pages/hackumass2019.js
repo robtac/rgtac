@@ -41,7 +41,7 @@ export default class frc extends React.Component {
 										src="https://youtube.com/embed/iA9r2DP_DuM"
 										frameborder="0"
 										className="embed-responsive-item"
-										allowfullscreen="0"
+										allowFullScreen="0"
 									/>
 								</div>
 							</div>

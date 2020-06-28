@@ -22,7 +22,7 @@ export default class Certifications extends React.Component {
 									speech recognition, effective web search, and a vastly
 									improved understanding of the human genome.
 								</p>
-                <Image src="/static/cert1.jpg" alt="Machine Learning Certification" />
+                <Image src="./cert1.jpg" alt="Machine Learning Certification" />
 							</div>
 							<div className="col-md-6">
 								<h2>Full-Stack Web Development with React</h2>
@@ -31,7 +31,7 @@ export default class Certifications extends React.Component {
 									Ecosystem, including the latest frameworks in React, React
 									Native, and Node.js.
 								</p>
-                <Image src="/static/cert2.jpg" alt="Full Stack React Certification" />
+                <Image src="./cert2.jpg" alt="Full Stack React Certification" />
 							</div>
 						</div>
 						<div className="row justify-content-md-start">
