@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
@@ -20,6 +21,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-medium-image-zoom": "3.1.2",
+    "react-multi-carousel": "^2.5.5",
     "reactstrap": "^8.5.1",
     "wowjs": "^1.1.3"
   }

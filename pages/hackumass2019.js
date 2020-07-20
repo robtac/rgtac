@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "../components/Image";
 import Layout from "../components/Layout/layout";
 
 export default class frc extends React.Component {
@@ -7,7 +8,8 @@ export default class frc extends React.Component {
 			<Layout>
 				<section className="text-center">
 					<div className="container">
-						<h1>Project Odin</h1>
+						{/* <h1>Project Odin</h1> */}
+						<Image src="./odin.png" alt="Project Odin Logo" />
 						<p><i>Winner of Best AR/VR Hack, and 3rd place overall at HackUMass 2019</i></p>
 					</div>
 					<br />
