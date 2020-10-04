@@ -6,7 +6,7 @@ export default class Image extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className={this.props.className}>
 				<ImageZoom
 					image={{
 						src: this.props.src,

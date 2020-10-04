@@ -16,7 +16,11 @@ const iconList = {
 	node: "./icons/node.svg",
 	python: "./icons/python.svg",
 	react: "./icons/react.svg",
-	ros: "./icons/ros.png"
+	ros: "./icons/ros.png",
+	nasa: "./icon-nasa.png",
+	isef: "./icon-isef.png",
+	usaf: "./icon-usaf.png",
+	aiaa: "icon-aiaa.jpg",
 }
 
 const Icon = ({ name, title }) => (

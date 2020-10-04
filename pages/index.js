@@ -3,7 +3,8 @@ import Link from "next/link";
 import Layout from "../components/Layout/layout";
 import { Button, Card, CardImg, CardText, CardBody, CardTitle, Carousel, CarouselItem, CardHeader } from "reactstrap";
 import Image from "../components/Image";
-import ImageZoom from "react-medium-image-zoom";
+import Icon from "../components/Icon/Icon";
+import ReactPlayer from 'react-player/youtube';
 
 const items = [
 	{
@@ -120,34 +121,59 @@ export default class Home extends React.Component {
 						</div>
 						<br />
 						<div className="row">
-							<div className="col-lg-6 col-md-6">
+							<div className="col-md-6">
 								<h2>Safecopter</h2>
 								<p align="justify">
-									Multicopters have a wide range of applications, from
-									surveillance to package delivery and medical support. The goal
-									of Safecopter, a project I started in high school, is to
-									develop a modular collision detection and avoidance system
-									based on an array of 3D cameras that would make flying a
-									multicopter in autonomous or tele-operated mode completely
-									safe and responsive to the changing environment. This project
-									has garnered international recognition.
+									Safecopter is a modular collision detection and avoidance system
+									based on an array of six 3D cameras. This project
+									received international recognition:
 								</p>
-								<Link href="/safecopter"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
+								<div className="d-flex justify-content-around align-items-center">
+									<a className="d-flex flex-column col-3" href="https://www.societyforscience.org/isef/" target="_blank">
+										<img src="./icon-isef.png" alt="ISEF icon" />
+										<p>ISEF</p>
+									</a>
+									<a className="d-flex flex-column col-3" href="https://www.nasa.gov/" target="_blank">
+										<img src="./icon-nasa.png" alt="NASA icon" />
+										<p>NASA</p>
+									</a>
+									<a className="d-flex flex-column col-3" href="https://www.airforce.com/" target="_blank">
+										<img src="./icon-usaf.png" alt="USAF icon" />
+										<p>USAF</p>
+									</a>
+									<a className="d-flex flex-column col-3" href="https://www.aiaa.org/" target="_blank">
+										<img src="./icon-aiaa.png" alt="AIAA icon" />
+										<p>AIAA</p>
+									</a>
+								</div>
+								<div className="d-flex justify-content-around">
+									<Link href="/safecopter"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
+									<Link href="/awards"><Button color="primary"><a className="text-white">See Awards</a></Button></Link>
+								</div>
+								<br />
 							</div>
-							<div className="col-lg-6 col-md-6 d-flex align-items-center">
+							<div className="col-md-6 d-flex align-items-center">
 								{/* <img src="/public/home-quad.png" alt="Safecopter" /> */}
 								{/* <Image src="./home-quad.png" alt="Safecopter" /> */}
 								<div className="embed-responsive embed-responsive-16by9">
-								<iframe
-									title="Safecopter"
-									width="640"
-									height="360"
-									src="https://www.youtube.com/embed/dchzdfMpMYg"
-									frameBorder="0"
-									className="embed-responsive-item"
-									allowFullScreen="0"
-								/>
-							</div>
+									{/* <iframe
+										title="Safecopter"
+										width="640"
+										height="360"
+										src="https://www.youtube.com/embed/dchzdfMpMYg"
+										frameBorder="0"
+										className="embed-responsive-item"
+										allowFullScreen="0"
+										
+									/> */}
+									<ReactPlayer url="https://www.youtube.com/embed/dchzdfMpMYg"
+										width="640"
+										height="360"
+										controls={true}
+										playing={true}
+										muted={true} />
+								</div>
+								<br />
 							</div>
 						</div>
 						<div className="row">
