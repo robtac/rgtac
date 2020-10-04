@@ -144,12 +144,21 @@ export default class Profile extends React.Component {
 							<div className="col-md-12 text-left">
 								<h2 className="section-heading">About Me</h2>
 								<p>
-									I'm a sophomore studying computer science at the University of
+									I'm a junior studying computer science at the University of
 									Massachusetts Amherst
 									<br />
 								</p>
 								<li>
-									2019 ~ : {" "}
+									2020: GlobalFoundries Software Test Engineer Internship/Co-op
+								</li>
+								<li>
+									2019: {" "}
+									<Link href="/hackumass2019">
+										<a className="link-light">HackUMass 2019: Project Odin</a>
+									</Link>
+								</li>
+								<li>
+									2019: {" "}
 									<Link href="/ai">
 										<a className="link-light">AI Bear Recognition</a>
 									</Link>
