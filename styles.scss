@@ -6,7 +6,7 @@
 //
 // Color system
 //
-@import './colors.scss';
+@import "./colors.scss";
 
 // Reassign color vars to semantic color scheme
 $theme-colors: (
@@ -65,9 +65,9 @@ $link-hover-decoration: none !default;
 
 // Fonts
 //
-@import './fonts.scss';
+@import "./fonts.scss";
 
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 
 html,
 body {
@@ -114,4 +114,15 @@ a {
 .profile-icon {
   width: 90%;
   max-width: 70px;
+}
+
+.card-deck {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.card-footer {
+  background: transparent;
+  border-top: 0px;
+  padding-bottom: 15px;
 }

@@ -56,7 +56,7 @@ export default class Profile extends React.Component {
 								</a>
 							</div>
 							<div className="">
-								<a href="./resume.pdf" target="_blank">
+								<a href="./Resume-RobertTacescu.pdf" target="_blank">
 									<div className="d-flex flex-column">
 										<img
 											src="./icons/file-pdf.svg"
@@ -149,7 +149,7 @@ export default class Profile extends React.Component {
 									<br />
 								</p>
 								<li>
-									2020: GlobalFoundries Software Test Engineer Internship/Co-op
+									2020: GlobalFoundries Software Engineer Internship/Co-op
 								</li>
 								<li>
 									2019: {" "}

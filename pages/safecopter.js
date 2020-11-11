@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Layout from "../components/Layout/layout";
 import Image from "../components/Image";
+import ReactPlayer from 'react-player/youtube';
 
 export default class Safecopter extends React.Component {
 	render() {
@@ -11,7 +12,7 @@ export default class Safecopter extends React.Component {
 					<div className="container">
 						<div className="row">
 							<div className="embed-responsive embed-responsive-16by9 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-								<iframe
+								{/* <iframe
 									title="Safecopter"
 									width="640"
 									height="360"
@@ -19,7 +20,14 @@ export default class Safecopter extends React.Component {
 									frameBorder="0"
 									className="embed-responsive-item"
 									allowFullScreen="0"
-								/>
+								/> */}
+								<ReactPlayer url="https://www.youtube.com/embed/dchzdfMpMYg"
+									width="640"
+									height="360"
+									controls={true}
+									playing={true}
+									loop={true}
+									muted={true} />
 							</div>
 						</div>
 						<h1>Safecopter</h1>
@@ -98,7 +106,7 @@ export default class Safecopter extends React.Component {
 									more details, see the <Link href="/awards"><a>awards page</a></Link>.
 								</p>
 								<br />
-								<p align="left">Many thanks to these companies for supporting this project...</p>
+								<p align="left">Many thanks to these companies for sponsoring this project...</p>
 							</div>
 							<div className="row col-md-12 offset-md-1">
 								<div className="col-md-3">

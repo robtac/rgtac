@@ -53,11 +53,11 @@ export default class Navi extends React.Component {
 										<NavLink className="click">Profile</NavLink>
 									</Link>
 								</NavItem>
-								<NavItem>
+								{/* <NavItem>
 									<Link href="/ai">
 										<NavLink className="click">AI Projects</NavLink>
 									</Link>
-								</NavItem>
+								</NavItem> */}
 								<UncontrolledDropdown nav inNavbar>
 									<DropdownToggle nav caret>
 										Projects
@@ -72,6 +72,12 @@ export default class Navi extends React.Component {
 										<Link href="/hackumass2019">
 											<DropdownItem className="text-white blue-hover">
 												HackUMass 2019
+											</DropdownItem>
+										</Link>
+										<DropdownItem divider />
+										<Link href="/ai">
+											<DropdownItem className="text-white blue-hover">
+												Bear Image Classifier
 											</DropdownItem>
 										</Link>
 										<DropdownItem divider />

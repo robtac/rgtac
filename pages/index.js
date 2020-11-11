@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Layout from "../components/Layout/layout";
-import { Button, Card, CardImg, CardText, CardBody, CardTitle, Carousel, CarouselItem, CardHeader } from "reactstrap";
+import { Button, Card, CardImg, CardText, CardBody, CardTitle, Carousel, CarouselItem, CardHeader, CardFooter} from "reactstrap";
 import Image from "../components/Image";
 import Icon from "../components/Icon/Icon";
 import ReactPlayer from 'react-player/youtube';
@@ -115,13 +115,13 @@ export default class Home extends React.Component {
 									</Link>
 								</p>
 								<div className="col-md-10 offset-md-1">
-									<Image src="./home-nasa.jpg" alt="Nasa" />
+									<Image src="./home-nasa2.jpg" alt="Nasa" />
 								</div>
 							</div>
 						</div>
 						<br />
 						<div className="row">
-							<div className="col-md-6">
+							<div className="col-md-5">
 								<h2>Safecopter</h2>
 								<p align="justify">
 									Safecopter is a modular collision detection and avoidance system
@@ -152,7 +152,7 @@ export default class Home extends React.Component {
 								</div>
 								<br />
 							</div>
-							<div className="col-md-6 d-flex align-items-center">
+							<div className="col-md-7 d-flex align-items-center">
 								{/* <img src="/public/home-quad.png" alt="Safecopter" /> */}
 								{/* <Image src="./home-quad.png" alt="Safecopter" /> */}
 								<div className="embed-responsive embed-responsive-16by9">
@@ -171,6 +171,7 @@ export default class Home extends React.Component {
 										height="360"
 										controls={true}
 										playing={true}
+										loop={true}
 										muted={true} />
 								</div>
 								<br />
@@ -187,24 +188,34 @@ export default class Home extends React.Component {
 									<CardTitle><h2>Safecopter</h2></CardTitle>
 									<Image src="./home-quad.png" alt="Safecopter" />
 									<CardText align="justify">International award winning modular collision detection and avoidance system. (C++, ROS, Gazebo physics simulation, python).</CardText>
-									<Link href="/safecopter"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
 								</CardBody>
+								<CardFooter>
+									<Link href="/safecopter"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
+								</CardFooter>
 							</Card>
 							<Card color="light" className="col-lg-4">
 								<CardBody>
 									<CardTitle><h2>Project Odin</h2></CardTitle>
-									<Image src="./odin.png" alt="Project Odin Logo" />
+									{/* <Image src="./odin.png" alt="Project Odin Logo" /> */}
+									<div className="d-flex align-items-center">
+										<Image src="./matrix-creator.png" alt="Project Odin Logo" />
+									</div>
 									<CardText align="justify">Award winning sound detection, classification, and localization for assisting the hearing impaired. (Java, Python, AI, Machine Learning).</CardText>
-									<Link href="/hackumass2019"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
+									{/* <Link href="/hackumass2019"><Button color="primary"><a className="text-white">Read More</a></Button></Link> */}
 								</CardBody>
+								<CardFooter>
+									<Link href="/hackumass2019"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
+								</CardFooter>
 							</Card>
 							<Card color="light" className="col-lg-4">
 								<CardBody>
 									<CardTitle><h2>Bear Image Classifier</h2></CardTitle>
 									<Image src="./bear_together.jpg" alt="Teddy Bear" />
 									<CardText align="justify">Transfer learning convolutional neural network for classifying various types of bears. (Tensorflow 2, Python)</CardText>
-									<Link href="/ai"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
 								</CardBody>
+								<CardFooter>
+									<Link href="/ai"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
+								</CardFooter>
 							</Card>
 						</div>
 						<div className="d-lg-flex flex-row">
@@ -213,16 +224,20 @@ export default class Home extends React.Component {
 									<CardTitle><h2>FFmpeg Motion Detection</h2></CardTitle>
 									<Image src="./ffmpeg.png" alt="Safecopter" />
 									<CardText align="justify">Motion detection in security camera footage based on FFmpeg scene change algorithm. (Python, ffmpeg, PySimpleGUI).</CardText>
-									<Link href="/"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
 								</CardBody>
+								<CardFooter>
+									<Link href="/"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
+								</CardFooter>
 							</Card>
 							<Card color="light" className="col-lg-4">
 								<CardBody>
 									<CardTitle><h2>FRC Robotics</h2></CardTitle>
-									<Image src="./frc.png" alt="Project Odin Logo" />
+									<Image src="./frc.png" alt="FRC logo" />
 									<CardText align="justify">Robot tele-operated control and autonomous drive system using vision-based target detection. (Java, OpenCV, Robotics).</CardText>
-									<Link href="/frc"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
 								</CardBody>
+								<CardFooter>
+									<Link href="/frc"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
+								</CardFooter>
 							</Card>
 						</div>
 					</div>

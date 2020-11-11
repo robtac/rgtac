@@ -19,13 +19,13 @@ export default class AI extends React.Component {
 				<section className="text-center">
 					<div className="container">
 						{/* <ReactMarkdown source={test} /> */}
-						<h1>AI Projects</h1>
+						<h1>Machine Learning Projects</h1>
 					</div>
 					<div className="container">
 						<div className="row">
 							<div className="col-lg-7 col-md-6">
 								<h2>
-									Bears Image Classification; Transfer Learning with Tensorflow
+									Bears Image Classifier; Transfer Learning with Tensorflow
 									2.0
 								</h2>
 								<p align="justify">
