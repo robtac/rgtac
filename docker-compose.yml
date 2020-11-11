@@ -1,0 +1,17 @@
+version: "3"
+services:
+  rgtac:
+    image: rgtac
+    container_name: rgtac
+    expose:
+      - 3000
+    environment:
+      VIRTUAL_HOST: tech-ref.com
+      VIRTUAL_PORT: 3000
+      LETSENCRYPT_HOST: tech-ref.com
+    restart: unless-stopped
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
