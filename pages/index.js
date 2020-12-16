@@ -221,12 +221,12 @@ export default class Home extends React.Component {
 						<div className="d-lg-flex flex-row">
 							<Card color="light" className="col-lg-4">
 								<CardBody>
-									<CardTitle><h2>FFmpeg Motion Detection</h2></CardTitle>
-									<Image src="./ffmpeg.png" alt="Safecopter" />
+									<CardTitle><h2>Python Motion Detection</h2></CardTitle>
+									<Image src="./ffmpeg-python.png" alt="Safecopter" />
 									<CardText align="justify">Motion detection in security camera footage based on FFmpeg scene change algorithm. (Python, ffmpeg, PySimpleGUI).</CardText>
 								</CardBody>
 								<CardFooter>
-									<Link href="/"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
+									<Link href="/motion-detect"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
 								</CardFooter>
 							</Card>
 							<Card color="light" className="col-lg-4">

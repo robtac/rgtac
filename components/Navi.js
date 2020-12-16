@@ -81,6 +81,12 @@ export default class Navi extends React.Component {
 											</DropdownItem>
 										</Link>
 										<DropdownItem divider />
+										<Link href="/motion-detect">
+											<DropdownItem className="text-white blue-hover">
+												Python Motion Detection
+											</DropdownItem>
+										</Link>
+										<DropdownItem divider />
 										<Link href="/frc">
 											<DropdownItem className="text-white blue-hover">
 												FRC Robotics
