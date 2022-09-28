@@ -28,7 +28,7 @@ export default class Layout extends React.Component {
 		return (
 			<div>
 				<Head>
-					<title>Robbie Tacescu</title>
+					<title>Robert Tacescu</title>
 				</Head>
 				<Navi />
 				{this.props.children}

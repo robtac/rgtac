@@ -29,42 +29,44 @@ export default class Profile extends React.Component {
 							className="rounded-circle profile"
 						/>
 						<h1>Robert Tacescu</h1>
-						<div className="d-flex justify-content-center">
-							<div className="">
-								<a href="https://github.com/robtac" target="_blank">
-									<div className="d-flex flex-column">
-										<img
-											src="./icons/github.svg"
-											className="profile-icon"
-										/>
-										<p>Github</p>
-									</div>
-								</a>
-							</div>
-							<div className="">
-								<a
-									href="https://www.linkedin.com/in/robert-tacescu-990845128/"
-									target="_blank"
-								>
-									<div className="d-flex flex-column">
-										<img
-											src="./icons/linkedin.svg"
-											className="profile-icon"
-										/>
-										<p>LinkedIn</p>
-									</div>
-								</a>
-							</div>
-							<div className="">
-								<a href="./Resume-RobertTacescu.pdf" target="_blank">
-									<div className="d-flex flex-column">
-										<img
-											src="./icons/file-pdf.svg"
-											className="profile-icon"
-										/>
-										<p>Resume</p>
-									</div>
-								</a>
+						<div className="container">
+							<div className="row justify-content-center">
+								<div className="col-4 col-xs-3 col-lg-2 align-content-center">
+									<a href="https://github.com/robtac" target="_blank">
+										<div className="d-flex flex-column">
+											<img
+												src="./icons/github.svg"
+												className="profile-icon align-self-center"
+											/>
+											<p className="align-self-center">Github</p>
+										</div>
+									</a>
+								</div>
+								<div className="col-4 col-xs-3 col-lg-2 align-content-center">
+									<a
+										href="https://www.linkedin.com/in/robert-tacescu-990845128/"
+										target="_blank"
+									>
+										<div className="d-flex flex-column">
+											<img
+												src="./icons/linkedin.svg"
+												className="profile-icon align-self-center"
+											/>
+											<p>LinkedIn</p>
+										</div>
+									</a>
+								</div>
+								<div className="col-4 col-xs-3 col-lg-2 align-content-center">
+									<a href="./Resume-RobertTacescu.pdf" target="_blank">
+										<div className="">
+											<img
+												src="./icons/file-pdf.svg"
+												className="profile-icon align-self-center"
+											/>
+											<p>Resume</p>
+										</div>
+									</a>
+								</div>
 							</div>
 						</div>
 						<div className="row justify-content-center">
@@ -125,6 +127,9 @@ export default class Profile extends React.Component {
 								<Icon title="ROS" name="ros" />
 							</div>
 							<div className="col-lg-3 col-6">
+								<Icon title="C#" name="csharp" />
+							</div>
+							<div className="col-lg-3 col-6">
 								<Icon title="C++" name="cpp" />
 							</div>
 						</div>
@@ -144,10 +149,14 @@ export default class Profile extends React.Component {
 							<div className="col-md-12 text-left">
 								<h2 className="section-heading">About Me</h2>
 								<p>
-									I'm a junior studying computer science at the University of
-									Massachusetts Amherst
-									<br />
+									I'm a Master's student studying Computer Science at the University of Massachusetts Amherst <br />
 								</p>
+								<li>
+									2022: SpaceX Software Engineer Internship
+								</li>
+								<li>
+									2021: Torc Robotics Software Engineer Internship
+								</li>
 								<li>
 									2020: GlobalFoundries Software Engineer Internship/Co-op
 								</li>
@@ -175,7 +184,6 @@ export default class Profile extends React.Component {
 										<a className="link-light">FRC Robotics</a>
 									</Link>
 								</li>
-								<li>2006 ~ : Avid tennis player</li>
 							</div>
 						</div>
 					</div>

@@ -6,12 +6,11 @@ services:
     expose:
       - 3000
     environment:
-      VIRTUAL_HOST: tech-ref.com
+      VIRTUAL_HOST: rgtac.com
       VIRTUAL_PORT: 3000
-      LETSENCRYPT_HOST: tech-ref.com
+      LETSENCRYPT_HOST: rgtac.com
     restart: unless-stopped
 
 networks:
   default:
-    external:
-      name: nginx-proxy
+    name: nginx-proxy

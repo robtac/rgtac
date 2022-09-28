@@ -39,7 +39,7 @@ export default class Navi extends React.Component {
 					className="d-md-flex justify-content-center"
 				>
 					<div className="d-md-flex">
-						<NavbarBrand href="/">Robbie Tacescu</NavbarBrand>
+						<NavbarBrand href="/">Robert Tacescu</NavbarBrand>
 						<NavbarToggler onClick={this.toggle} />
 						<Collapse isOpen={this.state.isOpen} navbar>
 							<Nav navbar>

@@ -6,6 +6,7 @@ const iconList = {
 	apple: "./icons/apple.svg",
 	aws: "./icons/aws.svg",
 	cpp: "./icons/cpp.png",
+	csharp: "./icons/csharp.svg",
 	pdf: "./icons/file-pdf.svg",
 	github: "./icons/github.svg",
 	html5: "./icons/html5.svg",
