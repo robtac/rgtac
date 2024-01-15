@@ -1,23 +1,21 @@
 import React from "react";
-import ImageZoom from "react-medium-image-zoom";
-import "../styles.scss";
+import Zoom from "react-medium-image-zoom";
+import 'react-medium-image-zoom/dist/styles.css'
 
 export default class Image extends React.Component {
 
 	render() {
 		return (
 			<div className={this.props.className}>
-				<ImageZoom
-					image={{
-						src: this.props.src,
-						alt: this.props.alt,
-					}}
-					zoomImage={{
+				<Zoom
+					zoomImg={{
 						src: this.props.src,
 						alt: this.props.alt,
 						className: "no-animation"
 					}}
-				/>
+					>
+					<img src={this.props.src} alt={this.props.alt} className="animated"/>
+				</Zoom>
 			</div>
 		);
 	}

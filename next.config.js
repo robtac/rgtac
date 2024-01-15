@@ -1,13 +1,10 @@
-const withSass = require("@zeit/next-sass");
-module.exports.withSass = withSass();
+/** @type {import('next').NextConfig} */
+const path = require('path')
 
-module.exports = withSass({
-	module: {
-		rules: [
-			{
-				test: /\.md$/i,
-				use: "raw-loader"
-			}
-		]
-	}
-});
+const nextConfig = {
+    sassOptions: {
+        includePaths: [path.join(__dirname, 'styles')]
+    }
+}
+
+module.exports = nextConfig

@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.scss";
+import styles from "./Icon.module.scss";
 
 const iconList = {
 	android: "./icons/android.svg",
@@ -25,10 +25,11 @@ const iconList = {
 }
 
 const Icon = ({ name, title }) => (
-	<div className="icon text-center" title={name}>
+	// <div className={`${styles.icon} text-center`} title={name}>
+	<div className={styles.icon} title={name}>
 		{/* <FontAwesomeIcon icon={["fab", name]} /> */}
-		<img src={iconList[name]} />
-    <p className="caption">{title}</p>
+		<img src={iconList[name]}  />
+		<p className="caption">{title}</p>
 	</div>
 );
 

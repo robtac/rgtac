@@ -1,8 +1,7 @@
 import React from "react";
 import Router from 'next/router';
-import Layout from "../components/Layout/layout";
+import Layout from "../components/layout";
 import { sendContactMail } from "../components/mail-api";
-import "../styles.scss";
 import {
 	Button,
 	Form,

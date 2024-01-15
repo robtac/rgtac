@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Layout from "../components/Layout/layout";
+import Layout from "../components/layout";
 import Image from "../components/Image";
 
 let awards = [
@@ -97,7 +97,7 @@ function Award({ img, alt, text, link, linkTarget }) {
 			<p>
 				{text} -{" "}
 				<Link href={linkTarget}>
-					<a>{link}</a>
+					{link}
 				</Link>
 			</p>
 		</div>

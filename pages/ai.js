@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/Layout/layout";
+import Layout from "../components/layout";
 import Image from "../components/Image";
 
 export default class AI extends React.Component {

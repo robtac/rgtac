@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../components/Image";
-import Layout from "../components/Layout/layout";
+import Layout from "../components/layout";
 
 export default class frc extends React.Component {
 	render() {
@@ -70,7 +70,7 @@ export default class frc extends React.Component {
 							</div>
 							<div className="col-md-6">
 								<h3>Technologies Used</h3>
-								<p align="justify">
+								<div align="justify">
 									<ul>
 										<li>Javascript</li>
 										<li>Node.js</li>
@@ -81,7 +81,7 @@ export default class frc extends React.Component {
 										<li>AI/Machine Learning</li>
 										<li>Matrix Creator Hat</li>
 									</ul>
-								</p>
+								</div>
 							</div>
 						</div>
 					</div>

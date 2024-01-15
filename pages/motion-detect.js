@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Layout from "../components/Layout/layout";
+import Layout from "../components/layout";
 import Image from "../components/Image";
 import ReactPlayer from 'react-player/youtube';
 

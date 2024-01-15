@@ -1,10 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import Layout from "../components/Layout/layout";
+import Layout from "../components/layout";
 import { Button, Card, CardImg, CardText, CardBody, CardTitle, Carousel, CarouselItem, CardHeader, CardFooter} from "reactstrap";
 import Image from "../components/Image";
 import Icon from "../components/Icon/Icon";
-import ReactPlayer from 'react-player/youtube';
+
+// Fix to react-player not really supporting SSR
+import dynamic from "next/dynamic";
+const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
 
 const items = [
 	{
@@ -104,14 +107,14 @@ export default class Home extends React.Component {
 							<div className="col-lg-7 col-md-6">
 								<h2>About Me</h2>
 								<p align="justify">
-									Hi, my name is Robert Tacescu, and I am a Master's student at the
-									University of Massachusetts Amherst studying Computer Science. From a young age, I’ve
-									been fascinated by the magic of computers and the wonders we
-									are able to achieve with them. I strive to expand my knowledge
-									and contribute to the community through research in the fields
-									of computer science and artificial intelligence.{" "}
+									Hello, I'm Robert Tacescu, a recent graduate with a Master's degree 
+									in Computer Science from the University of Massachusetts Amherst. 
+									My lifelong passion for computers has fueled my desire to explore 
+									the limitless possibilities they offer. Now, I'm eager to apply 
+									my expertise and contribute to the computer science and artificial 
+									intelligence fields through research and innovation.
 									<Link href="/profile">
-										<a>Read More</a>
+										Read More
 									</Link>
 								</p>
 								<div className="col-md-10 offset-md-1">
@@ -147,33 +150,19 @@ export default class Home extends React.Component {
 									</a>
 								</div>
 								<div className="d-flex justify-content-around">
-									<Link href="/safecopter"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
-									<Link href="/awards"><Button color="primary"><a className="text-white">See Awards</a></Button></Link>
+									{/* <Link href="/safecopter"><Button color="primary"><p className="text-white">Read More</p></Button></Link> */}
+									<Link href="/safecopter" className="text-white"><Button color="primary">Read More</Button></Link>
+									{/* <Link href="/awards"><Button color="primary"><p className="text-white">See Awards</p></Button></Link> */}
+									<Link href="/awards" className="text-white"><Button color="primary">See Awards</Button></Link>
 								</div>
 								<br />
 							</div>
 							<div className="col-md-7 d-flex align-items-center">
-								{/* <img src="/public/home-quad.png" alt="Safecopter" /> */}
-								{/* <Image src="./home-quad.png" alt="Safecopter" /> */}
-								<div className="embed-responsive embed-responsive-16by9">
-									{/* <iframe
-										title="Safecopter"
-										width="640"
-										height="360"
-										src="https://www.youtube.com/embed/dchzdfMpMYg"
-										frameBorder="0"
-										className="embed-responsive-item"
-										allowFullScreen="0"
-										
-									/> */}
 									<ReactPlayer url="https://www.youtube.com/embed/dchzdfMpMYg"
-										width="640"
-										height="360"
 										controls={true}
 										playing={true}
 										loop={true}
 										muted={true} />
-								</div>
 								<br />
 							</div>
 						</div>
@@ -190,7 +179,8 @@ export default class Home extends React.Component {
 									<CardText align="justify">International award winning modular collision detection and avoidance system. (C++, ROS, Gazebo physics simulation, python).</CardText>
 								</CardBody>
 								<CardFooter>
-									<Link href="/safecopter"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
+									{/* <Link href="/safecopter"><Button color="primary"><p className="text-white">Read More</p></Button></Link> */}
+									<Link href="/safecopter" className="text-white"><Button color="primary">Read More</Button></Link>
 								</CardFooter>
 							</Card>
 							<Card color="light" className="col-lg-4">
@@ -204,7 +194,8 @@ export default class Home extends React.Component {
 									{/* <Link href="/hackumass2019"><Button color="primary"><a className="text-white">Read More</a></Button></Link> */}
 								</CardBody>
 								<CardFooter>
-									<Link href="/hackumass2019"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
+									{/* <Link href="/hackumass2019"><Button color="primary"><p className="text-white">Read More</p></Button></Link> */}
+									<Link href="/hackumass2019" className="text-white"><Button color="primary">Read More</Button></Link>
 								</CardFooter>
 							</Card>
 							<Card color="light" className="col-lg-4">
@@ -214,7 +205,8 @@ export default class Home extends React.Component {
 									<CardText align="justify">Transfer learning convolutional neural network for classifying various types of bears. (Tensorflow 2, Python)</CardText>
 								</CardBody>
 								<CardFooter>
-									<Link href="/ai"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
+									{/* <Link href="/ai"><Button color="primary"><p className="text-white">Read More</p></Button></Link> */}
+									<Link href="/ai" className="text-white"><Button color="primary">Read More</Button></Link>
 								</CardFooter>
 							</Card>
 						</div>
@@ -226,7 +218,8 @@ export default class Home extends React.Component {
 									<CardText align="justify">Motion detection in security camera footage based on FFmpeg scene change algorithm. (Python, ffmpeg, PySimpleGUI).</CardText>
 								</CardBody>
 								<CardFooter>
-									<Link href="/motion-detect"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
+									{/* <Link href="/motion-detect"><Button color="primary"><p className="text-white">Read More</p></Button></Link> */}
+									<Link href="/motion-detect" className="text-white"><Button color="primary">Read More</Button></Link>
 								</CardFooter>
 							</Card>
 							<Card color="light" className="col-lg-4">
@@ -236,7 +229,8 @@ export default class Home extends React.Component {
 									<CardText align="justify">Robot tele-operated control and autonomous drive system using vision-based target detection. (Java, OpenCV, Robotics).</CardText>
 								</CardBody>
 								<CardFooter>
-									<Link href="/frc"><Button color="primary"><a className="text-white">Read More</a></Button></Link>
+									{/* <Link href="/frc"><Button color="primary"><p className="text-white">Read More</p></Button></Link> */}
+									<Link href="/frc" className="text-white"><Button color="primary">Read More</Button></Link>
 								</CardFooter>
 							</Card>
 						</div>

@@ -1,8 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import Layout from "../components/Layout/layout";
+import Layout from "../components/layout";
 import Image from "../components/Image";
-import ReactPlayer from 'react-player/youtube';
+
+// Fix to react-player not really supporting SSR
+import dynamic from "next/dynamic";
+const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
 
 export default class Safecopter extends React.Component {
 	render() {
@@ -12,15 +15,6 @@ export default class Safecopter extends React.Component {
 					<div className="container">
 						<div className="row">
 							<div className="embed-responsive embed-responsive-16by9 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-								{/* <iframe
-									title="Safecopter"
-									width="640"
-									height="360"
-									src="https://www.youtube.com/embed/dchzdfMpMYg"
-									frameBorder="0"
-									className="embed-responsive-item"
-									allowFullScreen="0"
-								/> */}
 								<ReactPlayer url="https://www.youtube.com/embed/dchzdfMpMYg"
 									width="640"
 									height="360"
@@ -38,7 +32,7 @@ export default class Safecopter extends React.Component {
 							</a>
 							{" | "}
 							<Link href="/awards">
-								<a>View Safecopter's awards</a>
+								View Safecopter's awards
 							</Link>
 						</div>
 					</div>
@@ -103,7 +97,7 @@ export default class Safecopter extends React.Component {
 								<p align="justify">
 									This project has won numerous international awards at the
 									Intel International Science and Engineering Fair (ISEF). For
-									more details, see the <Link href="/awards"><a>awards page</a></Link>.
+									more details, see the <Link href="/awards">awards page</Link>.
 								</p>
 								<br />
 								<p align="left">Many thanks to these companies for sponsoring this project...</p>

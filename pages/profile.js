@@ -2,7 +2,7 @@ import React from "react";
 import Icon from "../components/Icon/Icon";
 import Link from "next/link";
 import emergence from "emergence.js";
-import Layout from "../components/Layout/layout";
+import Layout from "../components/layout";
 import ReactAnimated from "../components/react-animated/react-animated";
 
 export default class Profile extends React.Component {
@@ -148,9 +148,9 @@ export default class Profile extends React.Component {
 						<div className="row cover-over">
 							<div className="col-md-12 text-left">
 								<h2 className="section-heading">About Me</h2>
-								<p>
-									I'm a Master's student studying Computer Science at the University of Massachusetts Amherst <br />
-								</p>
+								<li>
+									2023: SpaceX Application Software Engineer Internship
+								</li>
 								<li>
 									2022: SpaceX Software Engineer Internship
 								</li>
@@ -162,26 +162,26 @@ export default class Profile extends React.Component {
 								</li>
 								<li>
 									2019: {" "}
-									<Link href="/hackumass2019">
-										<a className="link-light">HackUMass 2019: Project Odin</a>
+									<Link href="/hackumass2019" className="link-light">
+										HackUMass 2019: Project Odin
 									</Link>
 								</li>
 								<li>
 									2019: {" "}
-									<Link href="/ai">
-										<a className="link-light">AI Bear Recognition</a>
+									<Link href="/ai" className="link-light">
+										AI Bear Recognition
 									</Link>
 								</li>
 								<li>
 									2015 ~ 2018:{" "}
-									<Link href="/safecopter">
-										<a className="link-light">Safecopter Project</a>
+									<Link href="/safecopter" className="link-light">
+										Safecopter Project
 									</Link>
 								</li>
 								<li>
 									2014 ~ 2018:{" "}
-									<Link href="/frc">
-										<a className="link-light">FRC Robotics</a>
+									<Link href="/frc" className="link-light">
+										FRC Robotics
 									</Link>
 								</li>
 							</div>

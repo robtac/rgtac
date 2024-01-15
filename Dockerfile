@@ -1,18 +1,19 @@
-FROM node:10
+FROM node:20-slim
+RUN corepack enable
 
 # Set working directory
 WORKDIR /usr/src/app
 
 # Installing dependencies
 COPY package*.json ./
-RUN npm install
+RUN pnpm install --prod
 
 # Copy source files
 COPY . .
 
 # Build app
-RUN npm run build
+RUN pnpm run build
 
 # Run the app
-CMD [ "npm", "start" ]
+CMD [ "pnpm", "start" ]
 

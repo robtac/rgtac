@@ -13,7 +13,6 @@ import {
 	DropdownItem
 } from "reactstrap";
 import Link from "next/link";
-import "../styles.scss";
 
 export default class Navi extends React.Component {
 	constructor(props) {
@@ -38,31 +37,22 @@ export default class Navi extends React.Component {
 					expand="md"
 					className="d-md-flex justify-content-center"
 				>
-					<div className="d-md-flex">
+					<div className="d-md-flex mx-auto">
 						<NavbarBrand href="/">Robert Tacescu</NavbarBrand>
 						<NavbarToggler onClick={this.toggle} />
 						<Collapse isOpen={this.state.isOpen} navbar>
 							<Nav navbar>
 								<NavItem>
-									<Link href="/">
-										<NavLink className="click">Home</NavLink>
-									</Link>
+									<NavLink href="/" className="click">Home</NavLink>
 								</NavItem>
 								<NavItem>
-									<Link href="/profile">
-										<NavLink className="click">Profile</NavLink>
-									</Link>
+									<NavLink href="/profile" className="click">Profile</NavLink>
 								</NavItem>
-								{/* <NavItem>
-									<Link href="/ai">
-										<NavLink className="click">AI Projects</NavLink>
-									</Link>
-								</NavItem> */}
 								<UncontrolledDropdown nav inNavbar>
 									<DropdownToggle nav caret>
 										Projects
 									</DropdownToggle>
-									<DropdownMenu right className="bg-info">
+									<DropdownMenu end className="bg-info">
 										<Link href="/safecopter">
 											<DropdownItem className="text-white blue-hover">
 												Safecopter
@@ -98,7 +88,7 @@ export default class Navi extends React.Component {
 									<DropdownToggle nav caret>
 										Accomplishments
 									</DropdownToggle>
-									<DropdownMenu right className="bg-info text-white">
+									<DropdownMenu end className="bg-info text-white">
 										<Link href="/awards">
 											<DropdownItem className="text-white blue-hover">
 												Awards
@@ -112,11 +102,9 @@ export default class Navi extends React.Component {
 										</Link>
 									</DropdownMenu>
 								</UncontrolledDropdown>
-								<NavItem>
-									<Link href="/contact">
-										<NavLink className="click">Contact Me</NavLink>
-									</Link>
-								</NavItem>
+								{/* <NavItem>
+									<NavLink href="/contact" className="click">Contact Me</NavLink>
+								</NavItem> */}
 							</Nav>
 						</Collapse>
 					</div>

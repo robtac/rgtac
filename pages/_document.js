@@ -1,4 +1,4 @@
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 // We wrap our scripts below in Fragment to avoid unnecessary mark up
 import { Fragment } from 'react';
 export default class MyDocument extends Document {
@@ -26,8 +26,10 @@ export default class MyDocument extends Document {
   render() {
     const { isProduction } = this.props;
     return (
-      <html>
-          <Head />
+      <Html>
+          <Head>
+            <link rel="icon" href="/favicon.png" />
+          </Head>
         <body>
           <Main />
           <NextScript />
@@ -43,7 +45,7 @@ export default class MyDocument extends Document {
             </Fragment>
           )}
         </body>
-      </html>
+      </Html>
     );
   }
 }

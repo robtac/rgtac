@@ -1,7 +1,5 @@
 import React from "react";
-import Navi from "../Navi";
-import "../../animate.scss";
-import "./styles.scss";
+import Navi from "./Navi";
 import Head from 'next/head';
 
 import Router from 'next/router'
